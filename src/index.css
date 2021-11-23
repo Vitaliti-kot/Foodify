@@ -1,0 +1,143 @@
+/* default */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Navbar */
+.navLinks
+{
+  width: 100%;
+  justify-content: center;
+  margin: 10px;
+}
+.navLinks a
+{
+  margin-left: 30px;
+  color:white;
+  text-decoration:none;
+}
+.No-displayBtn
+{
+  display: none;
+}
+.success
+{
+  display:block;
+  margin-right: 100px;
+}
+
+/* Rrecipe */
+.homePageContent
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homePageContent .card
+{
+  width: 90%;
+  margin-left:20px;
+  margin-top:20px;
+  padding:20px;
+  align-items:center; 
+}
+.homePageContent .card .img
+{
+  width: 40%;
+}
+.cardTitle
+{
+  text-align: center;
+}
+.btnsRow
+{
+  width: 80%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+.btnSkip,.btnSkip,.btn
+{
+  flex: 1;
+}
+
+/* Ffavourite */
+.favouriteCard
+{
+  width: 400px;
+  max-height: 400px;
+  overflow: auto;
+  margin: 20px;
+}
+.card-title
+{
+  text-align: center;
+}
+.card img
+{
+  width: 40%;
+}
+
+/* Favourit */
+.favouriteCards
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.noCard
+{
+  text-align:"center";
+  top:50px
+}
+.card
+{
+  width: 90%;
+  margin:20px;
+  padding:20px;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 990px)
+{
+  .navLinks{
+    justify-content: center;
+  }
+  .navLinks a
+  {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    text-align: center;
+  }
+  .navbar-collapse.show ~.success 
+  {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 900px)
+{
+  .favouriteCards
+  {
+    display:grid;
+    width: 100%;
+  }
+  .favouriteCard
+  {
+    width: 90%;
+    max-height: 400px;
+    overflow: auto;
+    margin: 20px;
+  }
+}
