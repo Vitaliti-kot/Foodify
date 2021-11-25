@@ -28,9 +28,7 @@ const MyModal =({active, setActive})=>{
         document.getElementById("title").value="";
         document.getElementById("img").value="";
         document.getElementById("description").value="";
-
-        setActive(false);
-        navigate(0);
+        navigate(-1);
     }
     useEffect(()=>{},[newDish]);
     const onChange=(e)=>{
